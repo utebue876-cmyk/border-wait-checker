@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+venv/
+.env
+border_report.txt
+debug_row.txt
+inspect_log.txt
