@@ -1,0 +1,67 @@
+
+============================================================
+Context around line 184
+============================================================
+
+174: </div>	<input type="hidden" name="hdata" value="1772949600"><input type="hidden" name="hzmiana" value="0"><input type="hidden" name="v" value="en"><input type="hidden" name="k" value="w" width='1px'><input type="hidden" name="p" value="u"><input type="hidden" name="c" value="t"><div id="content" >
+175: <div>
+176: <div align="center"  valign="middle"  width="90px" class="kolumnawyborcenter">
+177: <img src="images/Belarus.gif" border="0" alt="state flag Belarus" /><br/><strong>Belarus</strong></div><div width="150px" align="left" class="kolumnawyborleft">
+178: &nbsp; <a href="?p=b&c=t&v=en&k=w" title="link to Waiting times for departure to Belarus"><strong>EXIT from Poland</strong></a>	</div>
+179: <div align="center"  valign="middle" width="90px" class="kolumnawyborcenter">
+180: <img src="images/Russian_Fed.gif" border="0"  alt="state flag Russia"/><br/><strong>Russia</strong></div><div width="150px" align="left" class="kolumnawyborleft">
+181: &nbsp; <a href="?p=fr&c=t&v=en&k=w" title="link to Waiting times for departure to Russia"><strong>EXIT from Poland</strong></a>
+182: </div>
+183: <div align="center"  valign="middle" width="90px" class="kolumnawyborcenter">
+184: <img src="images/Ukraine.gif" border="0" alt="state flag Ukraine"/><br/><strong>Ukraine</strong></div><div width="150px" align="left" class="kolumnawyborleft">
+185: &nbsp; <span style="color:#666;text-decoration:underline"">EXIT from Poland</span>
+186: </div>
+187: </div>
+188: <p>
+189: <br/>
+190: <a href="?p=u&c=t&v=en&k=p" title="link to Check waiting time in the import direction on the neighboring countries websites.">Check waiting time in the import direction on the neighboring countries websites.</a>	</p>
+191: <!--2016-12-15 zmieniono opis z "Szacunkowy czas na przekroczenie granicy" na "Szacunkowy czas oczekiwania na rozpoczÄcie odprawy granicznej"-->
+192: <br/>
+193: 
+194: <table  border="1px" cellpadding="0" cellspacing="0">
+195: <tr>
+196: <td colspan="2" rowspan="2"  >
+197: <table width="100%" border="0px">
+198: <tr><td align="right"><img src="images/Ukraine.gif" border="0" alt="picture  state flag  Ukraine"/></td><td><strong><span style="font-size:4">Ukraine</span></strong><br/>
+199: EXIT from Poland</td><td><span style="font-size:3">Data from :<strong><br/>2026-3-8</strong></span></td>
+200: </tr></table>
+201: <td colspan="4" align="center"  >IAS Lublin</td>
+202: <td colspan="5" align="center"  >IAS RzeszÃ³w</td>
+203: </tr>
+204: <tr>
+205: <th scope="col" align="center" class="dane">&nbsp;Dorohusk&nbsp;</th>
+206: <th scope="col" align="center" class="dane">&nbsp;Zosin &nbsp;</th>
+207: <th scope="col" align="center" class="dane">&nbsp;DoÅhobyczÃ³w&nbsp;</th>
+208: <th scope="col" align="center" class="dane">&nbsp;Hrebenne&nbsp;</th>
+209: <th scope="col" align="center" class="dane1">&nbsp;Budomierz&nbsp;</th>
+210: <th scope="col" align="center" class="dane1">&nbsp;Korczowa&nbsp;</th>
+211: <th scope="col" align="center" class="dane1">&nbsp;Medyka&nbsp;<br/>
+212: </th>
+213: <th scope="col" align="center" class="dane1">&nbsp;Malhowice&nbsp;<br/>
+214: </th>
+215: <th  align="center" class="dane1">&nbsp;KroÅcienko&nbsp;<br/>
+216: </th>
+217: </tr>
+218: <tr><td class="os_cie1"><img src="images/ciezarowka.gif" alt="picture  TRUCKS"/></td>				<td class="opis">Estimated waiting time to cross the border [h]&nbsp;</td>
+219: 
+220: <td align="center" class="dane1" >&nbsp;>7,5T DMC&nbsp;<br/>9:00&nbsp;</td>
+221: <td align="center" class="dane" >&nbsp;â¤7,5T DMC*&nbsp;<br/>0:00&nbsp;</td>
+222: <td align="center" class="dane1" >&nbsp;â¤7,5T DMC*&nbsp;<br/>1:00&nbsp;</td>
+223: <td align="center" class="dane" >&nbsp;>7,5T DMC&nbsp;<br/>10:00&nbsp;</td>
+224: <td align="center" class="dane1" >&nbsp;â¤7,5T DMC&nbsp;<br/>0:00&nbsp;</td>
+225: <td align="center" class="dane1" >&nbsp;>7,5T DMC&nbsp;<br/>3:00&nbsp;</td>
+226: <td align="center" class="dane1" >&nbsp;>7,5T DMC&nbsp;<br/>3:00&nbsp;</td>
+227: <td align="center" class="dane1" bgcolor="#CCCCCC">&nbsp;</td><!--malhowice-->
+228: <td align="center" class="dane1" >&nbsp;â¤7,5T DMC&nbsp;<br/>0:00&nbsp;</td>
+229: 
+230: </tr><tr><td class="os_cie1"><img src="images/autobus.gif" alt="picture  BUSES"/></td>				<td class="opis">Estimated waiting time to cross the border [h]&nbsp;</td>
+231: 
+232: <td align="center" class="dane" >1:00&nbsp;</td>
+233: <td align="center" class="dane"  >0:00&nbsp;</td>
+234: <td align="center" class="dane1" >0:00&nbsp;</td>
+

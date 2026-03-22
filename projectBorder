@@ -1,0 +1,310 @@
+Good. Do not build this as one giant script. That is how small projects turn into a mess.
+
+Project idea
+
+Border Wait Checker
+
+A small Python app that checks Poland to Ukraine border crossing wait times and shows them in a clean, useful way.
+
+The point is simple:
+	•	fetch border data
+	•	extract the useful parts
+	•	clean it up
+	•	compare crossings
+	•	show the best option fast
+
+⸻
+
+What the project does
+
+You run the app and it:
+	1.	connects to a border wait time source
+	2.	downloads the latest page or data
+	3.	finds the crossing names and queue times
+	4.	cleans the text into readable values
+	5.	sorts or highlights the shortest wait
+	6.	prints a simple summary
+
+Later you can expand it to:
+	•	filter only Poland to Ukraine crossings
+	•	save last checked results
+	•	compare car vs truck queues
+	•	alert when a crossing drops below a set wait time
+
+⸻
+
+Project structure
+
+Keep it split into small functions, each with one job.
+
+Main flow
+
+Your main script should feel like this:
+
+def run():
+    raw_data = fetch_data()
+    border_rows = extract_border_rows(raw_data)
+    clean_data = parse_wait_times(border_rows)
+    show_results(clean_data)
+
+That is clean. That is readable. That is maintainable.
+
+⸻
+
+Core functions
+
+1. fetch_data()
+
+Purpose: Get the webpage or source data.
+
+What it does:
+	•	sends request to the border site
+	•	returns raw HTML or raw text
+
+Input:
+	•	none, or later maybe a URL
+
+Output:
+	•	raw page content
+
+⸻
+
+2. extract_border_rows(raw_data)
+
+Purpose: Pull out only the relevant border rows from the full page.
+
+What it does:
+	•	scans the HTML
+	•	finds table rows or sections containing border info
+	•	ignores junk like headers, menus, adverts
+
+Input:
+	•	raw HTML/text
+
+Output:
+	•	a list of border rows
+
+⸻
+
+3. parse_wait_times(border_rows)
+
+Purpose: Turn messy text into structured data.
+
+What it does:
+	•	reads each row
+	•	extracts crossing name
+	•	extracts wait time
+	•	stores it in a useful format
+
+Input:
+	•	list of raw rows
+
+Output:
+	•	list of dictionaries like:
+
+[
+    {"crossing": "Zosin", "wait": "2 hours"},
+    {"crossing": "Dorohusk", "wait": "5 hours"}
+]
+
+Better still, convert wait into numbers:
+
+[
+    {"crossing": "Zosin", "wait_hours": 2},
+    {"crossing": "Dorohusk", "wait_hours": 5}
+]
+
+That gives you something you can sort properly.
+
+⸻
+
+4. show_results(clean_data)
+
+Purpose: Display the information clearly.
+
+What it does:
+	•	prints each crossing and its wait
+	•	highlights the shortest queue
+	•	maybe sorts shortest to longest
+
+Input:
+	•	cleaned structured list
+
+Output:
+	•	printed report for the user
+
+Example output:
+
+BORDER WAIT TIMES
+
+1. Zosin        2 hours
+2. Hrebenne     3 hours
+3. Dorohusk     5 hours
+
+Fastest crossing: Zosin
+
+
+⸻
+
+Optional support functions
+
+These are not required at first, but they make the project stronger.
+
+5. sort_by_wait(clean_data)
+
+Purpose: Sort crossings from shortest to longest.
+
+6. filter_crossings(clean_data, names)
+
+Purpose: Show only crossings you care about.
+
+Example:
+	•	Zosin
+	•	Dorohusk
+	•	Hrebenne
+	•	Korczowa
+
+7. save_results(clean_data)
+
+Purpose: Save results to a file so you can compare later.
+
+Could save to:
+	•	text file
+	•	csv file
+	•	json file
+
+8. load_previous_results()
+
+Purpose: Show the last saved check.
+
+Useful if internet drops.
+
+⸻
+
+Suggested file layout
+
+Keep it simple.
+
+border_checker/
+│
+├── main.py
+├── fetcher.py
+├── parser.py
+├── display.py
+└── crossings.txt
+
+What each file does
+
+main.py
+
+Runs the project and links everything together.
+
+fetcher.py
+
+Contains:
+	•	fetch_data()
+
+parser.py
+
+Contains:
+	•	extract_border_rows()
+	•	parse_wait_times()
+	•	maybe sort_by_wait()
+
+display.py
+
+Contains:
+	•	show_results()
+
+crossings.txt
+
+Optional file with your favourite crossings so you can edit without touching code.
+
+Example:
+
+Zosin
+Dorohusk
+Hrebenne
+Korczowa
+
+That is the right move. Keep user-editable values outside the code when possible.
+
+⸻
+
+Best project version for a beginner
+
+Start with version 1:
+
+Version 1 goals
+	•	fetch webpage
+	•	print raw border rows
+	•	no sorting yet
+	•	no save file yet
+
+That proves the data pull works.
+
+Version 2 goals
+	•	extract crossing name
+	•	extract wait time
+	•	display clean list
+
+Version 3 goals
+	•	sort by shortest wait
+	•	highlight best crossing
+
+Version 4 goals
+	•	save last results to file
+	•	load previous results
+
+That is how you build properly. One layer at a time.
+
+⸻
+
+Why this structure matters
+
+Because otherwise you end up with:
+	•	one ugly script
+	•	impossible debugging
+	•	hard to update when the website changes
+	•	no clue what broke
+
+Small functions give you:
+	•	cleaner logic
+	•	easier debugging
+	•	easier upgrades
+	•	less chaos
+
+That is how real projects should be built, even small ones.
+
+⸻
+
+The data model I would use
+
+Use a list of dictionaries.
+
+Example:
+
+[
+    {"crossing": "Zosin", "vehicle": "car", "wait_hours": 2},
+    {"crossing": "Dorohusk", "vehicle": "car", "wait_hours": 5}
+]
+
+Why this works:
+	•	easy to print
+	•	easy to sort
+	•	easy to save
+	•	easy to expand later
+
+⸻
+
+My recommendation
+
+Build it in this order:
+	1.	fetch_data()
+	2.	extract_border_rows()
+	3.	parse_wait_times()
+	4.	show_results()
+
+That is enough for a solid first version.
+
+Next message I can give you Step 1 only with the exact code for fetch_data() and main.py, kept clean and phone-friendly for Pyto.

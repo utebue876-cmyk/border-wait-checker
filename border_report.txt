@@ -1,0 +1,38 @@
+Border wait times
+
+TRUCKS
+
+Dorohusk        9:00
+Zosin           0:00
+DoÅhobyczÃ³w   1:00
+Hrebenne        10:00
+Budomierz       0:00
+Korczowa        3:00
+Medyka          3:00
+Malhowice       N/A
+KroÅcienko     0:00
+
+BUSES
+
+Dorohusk        1:00
+Zosin           0:00
+DoÅhobyczÃ³w   0:00
+Hrebenne        0:00
+Budomierz       1:00
+Korczowa        3:00
+Medyka          0:00
+Malhowice       0:00
+KroÅcienko     0:00
+
+CARS
+
+Dorohusk        N/A
+Zosin           0:00
+DoÅhobyczÃ³w   0:00
+Hrebenne        0:00
+Budomierz       0:00
+Korczowa        1:00
+Medyka          0:00
+Malhowice       0:00
+KroÅcienko     0:00
+

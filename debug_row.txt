@@ -1,0 +1,15 @@
+CAR ROW HTML
+
+<tr><td rowspan="1" class="os_cie1"><img src="images/auto.gif" alt="picture  CARS"/></td>				<td class="opis">Estimated waiting time to cross the border [h]&nbsp;</td>
+				
+								<td align="center" class="dane"  bgcolor="#CCCCCC">&nbsp;</td>
+				<td align="center" class="dane"  >0:00&nbsp;</td>
+				<td align="center" class="dane1" >0:00&nbsp;</td>
+				<td align="center" class="dane"  >0:00&nbsp;</td>
+				<td align="center" class="dane1" >0:00&nbsp;</td>
+				<td align="center" class="dane1" >1:00&nbsp;</td>
+				<td align="center" class="dane1" >0:00&nbsp;</td>
+				<td align="center" class="dane1" >0&nbsp;</td>
+				<td align="center" class="dane1" >0:00&nbsp;</td>
+				
+				</tr>				</tr>
